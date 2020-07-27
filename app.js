@@ -40,7 +40,7 @@ app.use('/urls/', urls)
 //Error Handling
 app.use((req,res,next) =>
 {
-  const error = new Error("Not Found");
+  const error = new Error("Not Found error");
   error.status = 404;
   next(error);
 })
